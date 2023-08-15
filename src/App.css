@@ -1,0 +1,153 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  width: 100%;
+}
+.btn-logout{
+  height: 40px;
+}
+
+.task-summary{
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin-top: 15px;
+
+}
+.task-summary p{
+  font-size: 20px;
+}
+
+.task p{
+  font-size: 16px;
+  padding: 4px;
+}
+
+.task-sections {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.task-section {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 230px;
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 500px
+  
+}
+
+.modal input,
+.modal select {
+  margin: 10px 0;
+  width: 100%;
+  height: 50px;
+}
+
+.modal button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: flex;
+}
+.task-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 200px;
+}
+
+.task-card {
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 4px;
+  transition: transform 0.2s ease-in-out;
+  
+}
+
+.task-buttons{
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+  
+  
+}
+.task-button:hover{
+  background-color: #007bff;
+  color: #000;
+}
+.task-card:hover {
+  transform: translateY(-2px);
+}
+.addtask-btn {
+  background-color: #007bff; /* Change to your desired color */
+  color: white;
+  border: none;
+  padding: 10px 20px; /* Adjust padding to change button size */
+  font-size: 16px; /* Adjust font size */
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.addtask-btn:hover {
+  background-color: #0056b3; /* Change to a slightly darker shade for hover */
+}
+
+.task-card h3{
+  margin-top: 10px;
+}
+
+.task-card.low {
+  border-left: 5px solid green;
+}
+
+.task-card.medium {
+  border-left: 5px solid blue;
+}
+
+.task-card.high {
+  border-left: 5px solid red;
+}
+@media (max-width: 768px) {
+  .task-sections {
+    display: flex;
+    flex-direction: column;
+  }
+
+ 
+}
